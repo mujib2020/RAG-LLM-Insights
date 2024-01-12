@@ -10,3 +10,6 @@ Here's where RAG comes in. It allows an LLM to access and use private data to an
 - **Step 4:** Finally, the LLM crafts an answer based on this new, specific information rather than relying solely on its original training data.
   
 This approach helps LLMs provide accurate answers to queries about private or company-specific data, expanding their usefulness in real-world applications.
+
+## Loading data
+LangChain offers superb capabilities for importing data from a range of sources including the Web, Wikipedia, Google Drive, and others. A comprehensive list of all the document loader integrations available with external data sources: https://python.langchain.com/docs/integrations/document_loaders/
