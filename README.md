@@ -36,4 +36,6 @@ In this important part of the process, we turn text chunks into a form that fits
 The function *get_db_retriever(chunks)* works with the chunks we've already made. It uses an embedding technique, specifically the OpenAIEmbeddings, to process these chunks. What it does is it applies this special algorithm to the chunks, which helps to translate and store them effectively. After this, the chunks are kept in the Chroma database. We then use this Chroma database for the next steps in our process.
 
 
-
+**References:**
+- https://python.langchain.com/docs/modules/data_connection/
+- 
