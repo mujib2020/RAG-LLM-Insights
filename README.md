@@ -14,6 +14,8 @@ This approach helps LLMs provide accurate answers to queries about private or co
 #### Loading data
 LangChain offers superb capabilities for importing data from a range of sources including the Web, Wikipedia, Google Drive, and others. A comprehensive list of all the document loader integrations available with external data sources: https://python.langchain.com/docs/integrations/document_loaders/
 
+**Document loaders** load documents from many different sources. LangChain provides over 100 different document loaders as well as integrations with other major providers in the space, like AirByte and Unstructured. LangChain provides integrations to load all types of documents (HTML, PDF, code) from all types of locations (private S3 buckets, public websites).
+
 #### Splitting the Data into Manageable Chunks
 Let's consider a scenario where we have a large file which could span over 20 or 30 pages. We start by loading all these pages into the application's memory.
 
