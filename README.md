@@ -11,12 +11,14 @@ Here's where RAG comes in. It allows an LLM to access and use private data to an
   
 This approach helps LLMs provide accurate answers to queries about private or company-specific data, expanding their usefulness in real-world applications.
 
-#### Loading data
+### Loading data
 LangChain offers superb capabilities for importing data from a range of sources including the Web, Wikipedia, Google Drive, and others. A comprehensive list of all the document loader integrations available with external data sources: https://python.langchain.com/docs/integrations/document_loaders/
 
 **Document loaders** load documents from many different sources. LangChain provides over 100 different document loaders as well as integrations with other major providers in the space, like AirByte and Unstructured. LangChain provides integrations to load all types of documents (HTML, PDF, code) from all types of locations (private S3 buckets, public websites).
 
-#### Splitting the Data into Manageable Chunks
+### Text Splitting: Splitting the Data into Manageable Chunks
+A key part of retrieval is fetching only the relevant parts of documents. This involves several transformation steps to prepare the documents for retrieval. One of the primary ones here is splitting (or chunking) a large document into smaller chunks. LangChain provides several transformation algorithms for doing this, as well as logic optimized for specific document types (code, markdown, etc).
+
 Let's consider a scenario where we have a large file which could span over 20 or 30 pages. We start by loading all these pages into the application's memory.
 
 The next step involves breaking down this extensive data into smaller, more manageable chunks. Each chunk consists of 512 characters. To achieve this, we employ a method named *get_splitted_chunks*. This method uses a tool called RecursiveCharacterTextSplitter, which is designed to divide the text into multiple sections.
